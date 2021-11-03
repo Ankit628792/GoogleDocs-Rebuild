@@ -21,13 +21,16 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Google Docs Rebuild</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
-      <Provider session={pageProps.session}>
-        <Component {...pageProps} />
-      </Provider>
-    </>)
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+            <link rel="icon" href="/favicon.png" />
+          </Head>
+          <Provider session={pageProps.session}>
+            <Component {...pageProps} />
+          </Provider>
+        </>)
 }
 
-export default MyApp
+        export default MyApp

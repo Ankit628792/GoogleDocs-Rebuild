@@ -25,6 +25,7 @@ export default function Home() {
   const [snapshot] = useCollectionOnce(db.collection('userDocs').doc(session.user.email).collection('docs').orderBy('timestamp', 'desc'))
 
   const createDocument = async () => {
+    if (!input || input.toString().trim() === "") return;
     const res = await db.collection('userDocs').doc(session.user.email).collection('docs').add({ fileName: input, timestamp: firebase.firestore.FieldValue.serverTimestamp() })
     const document = await db.collection('userDocs').doc(session.user.email).collection('docs').doc(res.id).get()
     setNewDoc({
@@ -41,13 +42,13 @@ export default function Home() {
   }
 
   const modal = (
-    <Modal size="sm" active={showModal} toggler={() => setShowModal(false)}>
+    <Modal size="md" active={showModal} toggler={() => setShowModal(false)}>
       <ModalBody>
-        <input type="text" required minLength="1" onChange={(e) => setInput(e.target.value)} value={input} className="outline-none w-full" placeholder="Enter document name..." onKeyDown={(e) => e.key === 'Enter' && createDocument()} />
+        <input type="text" required minLength="1" onChange={(e) => setInput(e.target.value)} value={input} className="outline-none w-full text-lg" placeholder="Enter document name..." onKeyDown={(e) => e.key === 'Enter' && createDocument()} />
       </ModalBody>
       <ModalFooter>
-        <Button color="blue" buttonType="link" onClick={(e) => setShowModal(false)} ripple="dark">Cancel</Button>
-        <Button color="blue" onClick={createDocument} ripple="light">Create</Button>
+        <Button color="blue" className="text-base" buttonType="link" onClick={(e) => setShowModal(false)} ripple="dark">Cancel</Button>
+        <Button color="blue" className="text-base" onClick={createDocument} ripple="light">Create</Button>
       </ModalFooter>
     </Modal>
   )
@@ -61,6 +62,9 @@ export default function Home() {
       <Header />
       {modal}
       <style global jsx>{`
+      * {
+        font-family: 'Roboto', sans-serif;
+      }
        *::-webkit-scrollbar {
         display: none;
       }
