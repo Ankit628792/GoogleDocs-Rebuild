@@ -13,9 +13,9 @@ function Header() {
                 <Icon name="description" size="5xl" color="blue" />
                 <h1 className="hidden md:inline-flex ml-2 text-gray-700 text-2xl">Docs</h1>
 
-                <div className="flex items-center flex-grow mx-5 md:mx-20 px-5 py-2 bg-gray-100 text-gray-600 rounded-lg focus-within:to-gray-600 focus-within:shadow-md">
+                <div className="flex items-center flex-grow mx-1 sm:mx-5 md:mx-20 px-1 md:px-5 py-2 bg-gray-100 text-gray-600 rounded-lg focus-within:to-gray-600 focus-within:shadow-md">
                     <Icon name="search" size="3xl" color="gray" />
-                    <input type="text" placeholder="Search" className="flex-grow px-5 text-base bg-transparent outline-none" />
+                    <input type="text" placeholder="Search" className="flex-grow px-2 sm:px-5 text-base bg-transparent outline-none" />
                 </div>
 
                 <Button color="gray" buttonType="outline" rounded={true} iconOnly={true} ripple="dark" className="hidden md:inline-flex h-20 w-20 border-0 border-none">

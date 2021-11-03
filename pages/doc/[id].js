@@ -33,7 +33,7 @@ function Doc() {
 
                 <div className="flex-grow px-2">
                     <h2 className="text-lg">{snapshot?.data()?.fileName}</h2>
-                    <div className="flex items-center text-sm space-x-1 -ml-1 h-8 text-gray-600">
+                    <div className="flex flex-wrap items-center text-sm space-x-1 -ml-1 h-8 text-gray-600">
                         <p className=" cursor-pointer hover:bg-gray-100 transition duration-200 ease-out p-2 rounded-lg">File</p>
                         <p className=" cursor-pointer hover:bg-gray-100 transition duration-200 ease-out p-2 rounded-lg">Edit</p>
                         <p className=" cursor-pointer hover:bg-gray-100 transition duration-200 ease-out p-2 rounded-lg">View</p>
