@@ -53,7 +53,7 @@ export default function Home() {
     </Modal>
   )
   return (
-    <div>
+    <main>
       <Head>
         <title>Google Docs Rebuild</title>
         <link rel="icon" href="/favicon.png" />
@@ -62,7 +62,7 @@ export default function Home() {
       <Header />
       {modal}
       <style global jsx>{`
-      * {
+      main {
         font-family: 'Roboto', sans-serif;
       }
        *::-webkit-scrollbar {
@@ -101,7 +101,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-    </div>
+    </main>
   )
 }
 

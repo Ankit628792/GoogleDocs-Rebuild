@@ -24,10 +24,10 @@ function Doc() {
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <style global jsx>{`
-                *{
+                header{
                     font-family: 'Roboto', sans-serif;
                   }
-                  
+
                 *::-webkit-scrollbar {
                     display: none;
                     }
