@@ -80,14 +80,14 @@ export default function Home() {
           </div>
           <div>
             <div className="relative h-52 w-40 border-2 cursor-pointer hover:border-blue-500" onClick={() => setShowModal(true)}>
-              <Image src="/assets/plus.png" layout="fill" />
+              <Image src="/assets/plus.png" alt='' layout="fill" />
             </div>
             <p className="ml-2 mt-2 font-medium text-base text-gray-700">Blank</p>
           </div>
         </div>
       </section>
 
-      <section className="bg-white px-10 md:px-0">
+      <section className="bg-white px-5 md:px-0">
         <div className="max-w-3xl mx-auto py-8 text-gray-700 text-base">
           <div className="flex items-center justify-between pb-5 px-4">
             <h2 className="font-medium flex-grow">My Documents</h2>
