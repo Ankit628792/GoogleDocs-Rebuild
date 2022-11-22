@@ -3,25 +3,25 @@
     "name": "Google Docs",
     "icons": [
       {
-        "src": "favicon.png",
+        "src": "logo.png",
         "type": "image/png",
         "sizes": "64x64 32x32 24x24 16x16",
         "purpose": "maskable"
       },
       {
-        "src": "favicon.png",
+        "src": "logo.png",
         "type": "image/png",
         "sizes": "144x144",
         "purpose": "any"
       },
       {
-        "src": "favicon.png",
+        "src": "logo.png",
         "type": "image/png",
         "sizes": "192x192",
         "purpose": "maskable"
       },
       {
-        "src": "favicon.png",
+        "src": "logo.png",
         "type": "image/png",
         "sizes": "512x512",
         "purpose": "maskable"
